@@ -14,6 +14,8 @@ public class Ressource : MonoBehaviour
         }
         instance = this;
     }
+
+    public 
     void Update()
     {
         
