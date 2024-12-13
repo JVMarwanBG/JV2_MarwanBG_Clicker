@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class TextManager : MonoBehaviour
 {
-    private int test = 1;
     public Text ironOre;
     public Text ironNug;
     public Text ironIng;
@@ -21,17 +20,18 @@ public class TextManager : MonoBehaviour
 
     private void Update()
     {
-        ironNug.text = test.ToString();
-        ironIng.text = test.ToString();
-        copperOre.text = test.ToString();
-        copperNug.text = test.ToString();
-        copperIng.text = test.ToString();
-        titaniumOre.text = test.ToString();
-        titaniumNug.text = test.ToString();
-        titaniumIng.text = test.ToString();
-        goldOre.text = test.ToString();
-        goldNug.text = test.ToString();
-        goldIng.text = test.ToString();
+        ironOre.text = Ressource.instance.ironOre.ToString();
+        ironNug.text = Ressource.instance.ironNug.ToString();
+        ironIng.text = Ressource.instance.ironIng.ToString();
+        copperOre.text = Ressource.instance.copperOre.ToString();
+        copperNug.text = Ressource.instance.copperNug.ToString();
+        copperIng.text = Ressource.instance.copperIng.ToString();
+        titaniumOre.text = Ressource.instance.titaniumOre.ToString();
+        titaniumNug.text = Ressource.instance.titaniumNug.ToString();
+        titaniumIng.text = Ressource.instance.titaniumIng.ToString();
+        goldOre.text = Ressource.instance.goldOre.ToString();
+        goldNug.text = Ressource.instance.goldNug.ToString();
+        goldIng.text = Ressource.instance.goldIng.ToString();
     }
 }
 
