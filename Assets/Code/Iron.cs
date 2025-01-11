@@ -5,10 +5,10 @@ using UnityEngine.Scripting;
 
 public class Iron : MonoBehaviour
 {
-    public int oreCount = 5;
     public int baseHp = 12;
     public SpriteRenderer spriteRenderer;
     public Sprite[] sprites;
+
 
     public static Iron instance;
     private void Awake()
@@ -49,14 +49,16 @@ public class Iron : MonoBehaviour
     IEnumerator Respawn()
     {
         spriteRenderer.enabled = false;
-        if (oreCount >= 1)
+        if (Ressource.instance.ironOre >= 1)
         {
             baseHp = 12;
             yield return new WaitForSeconds(1.5f);
             spriteRenderer.enabled = true;
-            oreCount--;
-            IronNuggets.instance.nuggetsCount++;
+            Ressource.instance.ironOre -= 1;
         }
 
     }
+
+
+
 }

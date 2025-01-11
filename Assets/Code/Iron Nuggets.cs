@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class IronNuggets : MonoBehaviour
 {
-    public int nuggetsCount = 0;
     public SpriteRenderer spriteRenderer;
 
     public static IronNuggets instance;
